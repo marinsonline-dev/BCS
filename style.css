@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f1f2e, #3a3a5a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  background: linear-gradient(90deg, #4dabf7, #51cf66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  margin: 5px 0 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ccc;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #4dabf7, #51cf66);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#resultado h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#resultado p {
+  font-size: 14px;
+}
+
+#resultado {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.progresso {
+  width: 100%;
+  height: 8px;
+  background: #444;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#barra {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4dabf7, #51cf66);
+  transition: width 0.3s ease;
+}

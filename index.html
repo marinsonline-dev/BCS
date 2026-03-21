@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BCS - Business Checkup System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TELA INICIAL -->
+<div class="container" id="inicio">
+  <h1>BCS</h1>
+  <h2>Business Checkup System</h2>
+  <p>Descubra falhas ocultas no seu negócio e aumente sua eficiência</p>
+
+  <button onclick="iniciar()">Iniciar diagnóstico</button>
+</div>
+
+<!-- QUESTIONÁRIO -->
+<div class="container" id="questionario" style="display:none;">
+  
+  <div class="progresso">
+    <div id="barra"></div>
+  </div>
+
+  <h2 id="pergunta"></h2>
+
+  <button onclick="responder(2)">Sim</button>
+  <button onclick="responder(1)">Parcialmente</button>
+  <button onclick="responder(0)">Não</button>
+
+</div>
+
+<!-- RESULTADO -->
+<div class="container" id="resultado" style="display:none;">
+  <h2 id="tituloResultado"></h2>
+  <p id="descricaoResultado"></p>
+
+  <canvas id="grafico" width="300" height="200"></canvas>
+
+  <button onclick="reiniciar()">Refazer diagnóstico</button>
+</div>
+
+<!-- BIBLIOTECA DE GRÁFICO -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- SEU JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
